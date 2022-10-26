@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/btnGoBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:padding="4dp"
+        android:src="@drawable/vector_arrow"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/tokenBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/round_border_rectangle"
+        android:gravity="center_vertical"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"
+        app:layout_constraintBottom_toBottomOf="@+id/btnGoBack"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btnGoBack">
+
+        <TextView
+            style="@style/regularTV"
+            android:layout_marginStart="8dp"
+            android:layout_toStartOf="@+id/coin"
+            android:padding="4dp"
+            android:text="3.5"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/coin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="6dp"
+            android:src="@drawable/coin_icon" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        style="@style/regularTV"
+        android:layout_marginTop="28dp"
+        android:padding="4dp"
+        android:text="@string/brisbane_tour"
+        android:textSize="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.094"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnGoBack" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="412dp"
+        android:layout_height="616dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:scrollbars="vertical">
+
+
+            <TextView
+                android:id="@+id/tg_heading0"
+                style="@style/regularTV"
+                android:layout_width="370dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="@string/old_st_stephen_s_church"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/areaTV0"
+                style="@style/regularTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tg_heading0"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="4dp"
+                android:text="@string/elizabeth_street"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/img0"
+                android:layout_width="370dp"
+                android:layout_height="140dp"
+                android:layout_below="@+id/areaTV0"
+                android:foreground="@drawable/pic_bg"
+                android:scaleType="centerCrop"
+                android:src="@drawable/tour003" />
+
+            <TextView
+                android:id="@+id/tg_body1"
+                style="@style/regularTV"
+                android:layout_width="370dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/img0"
+                android:layout_marginTop="24dp"
+                android:text="@string/in_1859_with_the_appointment_of_bishop_james_quinn_brisbane_became_a_diocese_and_the_church_a_cathedral_when_the_new_cathedral_was_opened_in_1874_this_church_became_a_school_room_during_the_past_century_it_was_used_for_school_church_offices_and_storage_and_was_several_times_threatened_with_demolition"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/tg_body2"
+                style="@style/regularTV"
+                android:layout_width="370dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tg_body1"
+                android:layout_marginTop="24dp"
+                android:text="@string/based_on_painstaking_historical_research_and_heritage_reports_the_bell_tower_has_been_rebuilt_the_stone_tracery_in_the_windows_reconstructed_and_a_timber_shingle_roof_reinstated_in_fact_it_has_been_enhanced_with_treasures_our_ancestors_could_not_have_imagined_the_west_window_is_now_filled_with_magnificent_stained_glass_depicting_christ_in_glory_and_the_story_of_st_stephen_the_building_will_take_its_place_in_the_cathedral_precinct_which_serves_as_an_oasis_for_shoppers_and_workers_in_the_midst_of_a_busy_city"
+                android:textStyle="bold" />
+
+
+            <Button
+                android:id="@+id/lm_oldchurch"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@+id/tg_body2"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="24dp"
+                android:backgroundTint="#000000"
+                android:text="@string/learn_more"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/gd_oldchurch"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@+id/lm_oldchurch"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="24dp"
+                android:backgroundTint="#000000"
+                android:text="@string/get_directions"
+                android:textSize="12sp" />
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

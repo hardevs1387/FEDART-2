@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/btnGoBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:padding="4dp"
+        android:src="@drawable/vector_arrow"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/tokenBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/round_border_rectangle"
+        android:gravity="center_vertical"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"
+        app:layout_constraintBottom_toBottomOf="@+id/btnGoBack"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btnGoBack">
+
+        <TextView
+            style="@style/regularTV"
+            android:layout_marginStart="8dp"
+            android:layout_toStartOf="@+id/coin"
+            android:padding="4dp"
+            android:text="3.5"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/coin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="6dp"
+            android:src="@drawable/coin_icon" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        style="@style/regularTV"
+        android:layout_marginTop="28dp"
+        android:padding="4dp"
+        android:text="@string/brisbane_tour"
+        android:textSize="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.094"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnGoBack" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="412dp"
+        android:layout_height="616dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:scrollbars="vertical">
+
+
+            <TextView
+                android:id="@+id/tg_heading0"
+                style="@style/regularTV"
+                android:layout_width="370dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="@string/brisbane_city_hall"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/areaTV0"
+                style="@style/regularTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tg_heading0"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="4dp"
+                android:text="@string/adelaide_street"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/img0"
+                android:layout_width="370dp"
+                android:layout_height="140dp"
+                android:layout_below="@+id/areaTV0"
+                android:foreground="@drawable/pic_bg"
+                android:scaleType="centerCrop"
+                android:src="@drawable/tour04" />
+
+            <TextView
+                android:id="@+id/tg_body1"
+                style="@style/regularTV"
+                android:layout_width="370dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/img0"
+                android:layout_marginTop="24dp"
+                android:text="@string/built_between_1920_and_1930_brisbane_city_council_s_heritage_listed_city_hall_sits_in_the_heart_of_brisbane_city_it_is_an_ideal_setting_for_hosting_events_with_its_sweeping_marble_staircases_vaulted_ceilings_chandeliers_and_mosaic_tiled_floor_having_undergone_a_215_million_restoration_city_hall_is_the_perfect_place_to_explore_brisbane_s_history_daily_guided_tours_showcase_the_main_auditorium_father_henry_willis_organ_and_the_iconic_clock_tower"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/tg_body2"
+                style="@style/regularTV"
+                android:layout_width="370dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tg_body1"
+                android:layout_marginTop="24dp"
+                android:text="@string/the_museum_of_brisbane_another_feature_of_city_hall_exhibits_artworks_from_the_city_of_brisbane_collection_contemporary_exhibitions_by_some_of_the_city_s_leading_artists_are_also_on_show"
+                android:textStyle="bold" />
+
+
+            <Button
+                android:id="@+id/lm_cityhall"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@+id/tg_body2"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="24dp"
+                android:backgroundTint="#000000"
+                android:text="@string/learn_more"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/gd_cityhall"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@+id/lm_cityhall"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="24dp"
+                android:backgroundTint="#000000"
+                android:text="@string/get_directions"
+                android:textSize="12sp" />
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

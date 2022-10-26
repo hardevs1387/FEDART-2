@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/tour_navigation"
+    app:startDestination="@+id/navigation_details2">
+
+    <fragment
+        android:id="@+id/navigation_details2"
+        android:name="com.example.draft1.ui.home.Details2Fragment"
+        android:label="@string/tour1"
+        tools:layout="@layout/fragment_details2"/>
+
+    <fragment
+        android:id="@+id/tour00"
+        android:name="com.example.draft1.ui.home.tour.tour0Fragment"
+        android:label="@string/tour1"
+        tools:layout="@layout/fragment_tour0"/>
+
+    <fragment
+        android:id="@+id/tour01"
+        android:name="com.example.draft1.ui.home.tour.tour1Fragment"
+        android:label="Tour"
+        tools:layout="@layout/fragment_tour1"/>
+
+    <fragment
+        android:id="@+id/tour02"
+        android:name="com.example.draft1.ui.home.tour.tour2Fragment"
+        android:label="Tour"
+        tools:layout="@layout/fragment_tour2"/>
+
+    <fragment
+        android:id="@+id/tour03"
+        android:name="com.example.draft1.ui.home.tour.tour3Fragment"
+        android:label="Tour"
+        tools:layout="@layout/fragment_tour3"/>
+
+    <fragment
+        android:id="@+id/tour04"
+        android:name="com.example.draft1.ui.home.tour.tour4Fragment"
+        android:label="Tour"
+        tools:layout="@layout/fragment_tour4"/>
+
+    <fragment
+        android:id="@+id/tour05"
+        android:name="com.example.draft1.ui.home.tour.tour5Fragment"
+        android:label="Tour"
+        tools:layout="@layout/fragment_tour5"/>
+
+    <fragment
+        android:id="@+id/tour06"
+        android:name="com.example.draft1.ui.home.tour.tour6Fragment"
+        android:label="Tour"
+        tools:layout="@layout/fragment_tour6"/>
+
+    <fragment
+        android:id="@+id/tour07"
+        android:name="com.example.draft1.ui.home.tour.tour7Fragment"
+        android:label="Tour"
+        tools:layout="@layout/fragment_tour7"/>
+
+    <fragment
+        android:id="@+id/tour08"
+        android:name="com.example.draft1.ui.home.tour.tour8Fragment"
+        android:label="Tour"
+        tools:layout="@layout/fragment_tour8"/>
+
+    <fragment
+        android:id="@+id/tour09"
+        android:name="com.example.draft1.ui.home.tour.tour9Fragment"
+        android:label="Tour"
+        tools:layout="@layout/fragment_tour9"/>
+
+    <activity
+        android:id="@+id/mainActivity"
+        android:name="com.example.draft1.MainActivity"
+        android:label="@string/title_home" />
+
+</navigation>

@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/btnGoBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:padding="4dp"
+        android:src="@drawable/vector_arrow"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/tokenBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/round_border_rectangle"
+        android:gravity="center_vertical"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"
+        app:layout_constraintBottom_toBottomOf="@+id/btnGoBack"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btnGoBack">
+
+        <TextView
+            style="@style/regularTV"
+            android:layout_marginStart="8dp"
+            android:layout_toStartOf="@+id/coin"
+            android:padding="4dp"
+            android:text="3.5"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/coin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="6dp"
+            android:src="@drawable/coin_icon" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        style="@style/regularTV"
+        android:layout_marginTop="28dp"
+        android:padding="4dp"
+        android:text="@string/brisbane_tour"
+        android:textSize="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.094"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnGoBack" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="412dp"
+        android:layout_height="616dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:scrollbars="vertical">
+
+
+            <TextView
+                android:id="@+id/tg_heading0"
+                style="@style/regularTV"
+                android:layout_width="370dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="@string/federation_university_brisbane"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/img001"
+                android:layout_width="370dp"
+                android:layout_height="140dp"
+                android:layout_below="@+id/tg_heading0"
+                android:foreground="@drawable/pic_bg"
+                android:scaleType="centerCrop"
+                android:src="@drawable/img00" />
+
+            <TextView
+                android:id="@+id/areaTV0"
+                style="@style/regularTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/img001"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="4dp"
+                android:text="@string/ann_street"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/tg_heading1"
+                style="@style/regularTV"
+                android:layout_width="370dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/areaTV0"
+                android:layout_marginTop="2dp"
+                android:text="@string/anzac_square_memorial_galleries"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/img1"
+                android:layout_width="370dp"
+                android:layout_height="140dp"
+                android:layout_below="@+id/tg_heading1"
+                android:foreground="@drawable/pic_bg"
+                android:scaleType="centerCrop"
+                android:src="@drawable/img01" />
+
+            <TextView
+                android:id="@+id/areaTV1"
+                style="@style/regularTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/img1"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="4dp"
+                android:text="@string/ann_street"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/tg_heading2"
+                style="@style/regularTV"
+                android:layout_width="370dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/img1"
+                android:layout_marginTop="24dp"
+                android:text="@string/macarthur_museum_brisbane"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/img2"
+                android:layout_width="370dp"
+                android:layout_height="140dp"
+                android:layout_below="@+id/tg_heading2"
+                android:foreground="@drawable/pic_bg"
+                android:scaleType="centerCrop"
+                android:src="@drawable/img02" />
+
+            <TextView
+                android:id="@+id/areaTV2"
+                style="@style/regularTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/img2"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="4dp"
+                android:text="@string/edward_street"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/tg_heading3"
+                style="@style/regularTV"
+                android:layout_width="370dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/img2"
+                android:layout_marginTop="24dp"
+                android:text="@string/old_st_stephen_s_church"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/img3"
+                android:layout_width="370dp"
+                android:layout_height="140dp"
+                android:layout_below="@+id/tg_heading3"
+                android:foreground="@drawable/pic_bg"
+                android:scaleType="centerCrop"
+                android:src="@drawable/img03" />
+
+            <TextView
+                android:id="@+id/areaTV3"
+                style="@style/regularTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/img3"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="4dp"
+                android:text="@string/elizabeth_street"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/tg_heading4"
+                style="@style/regularTV"
+                android:layout_width="370dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/img3"
+                android:layout_marginTop="24dp"
+                android:text="@string/brisbane_city_hall"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/img4"
+                android:layout_width="370dp"
+                android:layout_height="140dp"
+                android:layout_below="@+id/tg_heading4"
+                android:foreground="@drawable/pic_bg"
+                android:scaleType="centerCrop"
+                android:src="@drawable/img04" />
+
+            <TextView
+                android:id="@+id/areaTV4"
+                style="@style/regularTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/img4"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="4dp"
+                android:text="@string/adelaide_street"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/tg_heading5"
+                style="@style/regularTV"
+                android:layout_width="370dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/img4"
+                android:layout_marginTop="24dp"
+                android:text="@string/myer_center_brisbane"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/img5"
+                android:layout_width="370dp"
+                android:layout_height="140dp"
+                android:layout_below="@+id/tg_heading5"
+                android:foreground="@drawable/pic_bg"
+                android:scaleType="centerCrop"
+                android:src="@drawable/img05" />
+
+            <TextView
+                android:id="@+id/areaTV5"
+                style="@style/regularTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/img5"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="4dp"
+                android:text="@string/queen_street"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/tg_heading6"
+                style="@style/regularTV"
+                android:layout_width="370dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/img5"
+                android:layout_marginTop="24dp"
+                android:text="@string/brisbane_city_botanic_gardens"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/img6"
+                android:layout_width="370dp"
+                android:layout_height="140dp"
+                android:layout_below="@+id/tg_heading6"
+                android:foreground="@drawable/pic_bg"
+                android:scaleType="centerCrop"
+                android:src="@drawable/img06" />
+
+            <TextView
+                android:id="@+id/areaTV6"
+                style="@style/regularTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/img6"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="4dp"
+                android:text="@string/alice_street"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/tg_heading7"
+                style="@style/regularTV"
+                android:layout_width="370dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/img6"
+                android:layout_marginTop="24dp"
+                android:text="@string/qld_art_museum"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/img7"
+                android:layout_width="370dp"
+                android:layout_height="140dp"
+                android:layout_below="@+id/tg_heading7"
+                android:foreground="@drawable/pic_bg"
+                android:scaleType="centerCrop"
+                android:src="@drawable/img07" />
+
+            <TextView
+                android:id="@+id/areaTV7"
+                style="@style/regularTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/img7"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="4dp"
+                android:text="@string/george_street"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/tg_heading8"
+                style="@style/regularTV"
+                android:layout_width="370dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/img7"
+                android:layout_marginTop="24dp"
+                android:text="@string/treasury_casino_and_hotel_brisbane"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/img8"
+                android:layout_width="370dp"
+                android:layout_height="140dp"
+                android:layout_below="@+id/tg_heading8"
+                android:foreground="@drawable/pic_bg"
+                android:scaleType="centerCrop"
+                android:src="@drawable/img08" />
+
+            <TextView
+                android:id="@+id/areaTV8"
+                style="@style/regularTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/img8"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="4dp"
+                android:text="@string/william_street"
+                android:textStyle="bold" />
+
+
+            <TextView
+                android:id="@+id/tg_heading9"
+                style="@style/regularTV"
+                android:layout_width="370dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/img8"
+                android:layout_marginTop="24dp"
+                android:text="@string/wheel_of_brisbane"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/img9"
+                android:layout_width="370dp"
+                android:layout_height="140dp"
+                android:layout_below="@+id/tg_heading9"
+                android:foreground="@drawable/pic_bg"
+                android:scaleType="centerCrop"
+                android:src="@drawable/img09" />
+
+            <TextView
+                android:id="@+id/areaTV9"
+                style="@style/regularTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/img9"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="4dp"
+                android:text="@string/russell_street"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/StartTour"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@+id/areaTV9"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="24dp"
+                android:backgroundTint="#000000"
+                android:text="@string/START_TOUR"
+                android:textSize="18sp" />
+
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

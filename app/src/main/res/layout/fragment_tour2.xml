@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/btnGoBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:padding="4dp"
+        android:src="@drawable/vector_arrow"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/tokenBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/round_border_rectangle"
+        android:gravity="center_vertical"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"
+        app:layout_constraintBottom_toBottomOf="@+id/btnGoBack"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/btnGoBack">
+
+        <TextView
+            style="@style/regularTV"
+            android:layout_marginStart="8dp"
+            android:layout_toStartOf="@+id/coin"
+            android:padding="4dp"
+            android:text="3.5"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/coin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="6dp"
+            android:src="@drawable/coin_icon" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        style="@style/regularTV"
+        android:layout_marginTop="28dp"
+        android:padding="4dp"
+        android:text="@string/brisbane_tour"
+        android:textSize="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.094"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnGoBack" />
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="412dp"
+        android:layout_height="616dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:scrollbars="vertical">
+
+
+            <TextView
+                android:id="@+id/tg_heading0"
+                style="@style/regularTV"
+                android:layout_width="370dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:text="@string/macarthur_museum_brisbane"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/areaTV0"
+                style="@style/regularTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tg_heading0"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="4dp"
+                android:text="@string/edward_street"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:id="@+id/img0"
+                android:layout_width="370dp"
+                android:layout_height="140dp"
+                android:layout_below="@+id/areaTV0"
+                android:foreground="@drawable/pic_bg"
+                android:scaleType="centerCrop"
+                android:src="@drawable/tour03" />
+
+            <TextView
+                android:id="@+id/tg_body2"
+                style="@style/regularTV"
+                android:layout_width="370dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/img0"
+                android:layout_marginTop="24dp"
+                android:text="@string/macarthur_museum_looks_behind_the_front_lines_of_the_second_world_war_discover_the_role_brisbane_played_from_1939_1945_by_visiting_the_museum_the_museum_also_focuses_on_the_developing_alliance_between_australia_and_the_us_brought_about_by_the_cooperation_between_the_armed_forces_of_both_countries_during_world_war_two"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tg_heading1"
+                style="@style/regularTV"
+                android:layout_width="370dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tg_body2"
+                android:layout_marginTop="24dp"
+                android:text="@string/about_us"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tg_body1"
+                style="@style/regularTV"
+                android:layout_width="370dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tg_heading1"
+                android:layout_marginTop="24dp"
+                android:text="@string/macarthur_museum_of_brisbane_is_dedicated_to_telling_the_stories_of_the_allied_campaign_in_the_south_west_pacific_area_swpa_the_role_of_us_general_douglas_macarthur_as_supreme_commander_of_allied_forces_in_swpa_and_the_impact_of_the_war_on_the_city_of_brisbane_and_its_people"
+                android:textStyle="bold" />
+
+
+            <Button
+                android:id="@+id/lm_macarthur"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@+id/tg_body1"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="24dp"
+                android:backgroundTint="#000000"
+                android:text="@string/learn_more"
+                android:textSize="12sp" />
+
+            <Button
+                android:id="@+id/gd_macarthur"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@+id/lm_macarthur"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="24dp"
+                android:backgroundTint="#000000"
+                android:text="@string/get_directions"
+                android:textSize="12sp" />
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
